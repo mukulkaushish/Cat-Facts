@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		696EA490267D263E00495972 /* CatFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696EA486267D263E00495972 /* CatFacts.framework */; };
-		696EA495267D263E00495972 /* CatFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696EA494267D263E00495972 /* CatFactsTests.swift */; };
-		696EA497267D263E00495972 /* CatFacts.h in Headers */ = {isa = PBXBuildFile; fileRef = 696EA489267D263E00495972 /* CatFacts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,10 +22,8 @@
 
 /* Begin PBXFileReference section */
 		696EA486267D263E00495972 /* CatFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		696EA489267D263E00495972 /* CatFacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatFacts.h; sourceTree = "<group>"; };
 		696EA48A267D263E00495972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696EA48F267D263E00495972 /* CatFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		696EA494267D263E00495972 /* CatFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsTests.swift; sourceTree = "<group>"; };
 		696EA496267D263E00495972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +67,6 @@
 		696EA488267D263E00495972 /* CatFacts */ = {
 			isa = PBXGroup;
 			children = (
-				696EA489267D263E00495972 /* CatFacts.h */,
 				696EA48A267D263E00495972 /* Info.plist */,
 			);
 			path = CatFacts;
@@ -80,7 +75,6 @@
 		696EA493267D263E00495972 /* CatFactsTests */ = {
 			isa = PBXGroup;
 			children = (
-				696EA494267D263E00495972 /* CatFactsTests.swift */,
 				696EA496267D263E00495972 /* Info.plist */,
 			);
 			path = CatFactsTests;
@@ -93,7 +87,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696EA497267D263E00495972 /* CatFacts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +194,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696EA495267D263E00495972 /* CatFactsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
