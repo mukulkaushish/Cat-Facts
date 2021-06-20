@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693F0909267FBD0400EC9FA8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F0908267FBD0400EC9FA8 /* HTTPClient.swift */; };
+		693F090C267FBD9100EC9FA8 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F090B267FBD9100EC9FA8 /* URLSessionHTTPClient.swift */; };
 		696EA490267D263E00495972 /* CatFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696EA486267D263E00495972 /* CatFacts.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		693F0908267FBD0400EC9FA8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		693F090B267FBD9100EC9FA8 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		696EA486267D263E00495972 /* CatFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		696EA48A267D263E00495972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696EA48F267D263E00495972 /* CatFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		693F090A267FBD7900EC9FA8 /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				693F090B267FBD9100EC9FA8 /* URLSessionHTTPClient.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
 		696EA47C267D263E00495972 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +79,9 @@
 		696EA488267D263E00495972 /* CatFacts */ = {
 			isa = PBXGroup;
 			children = (
+				693F090A267FBD7900EC9FA8 /* Shared API Infra */,
 				696EA48A267D263E00495972 /* Info.plist */,
+				693F0908267FBD0400EC9FA8 /* HTTPClient.swift */,
 			);
 			path = CatFacts;
 			sourceTree = "<group>";
@@ -140,6 +154,7 @@
 				TargetAttributes = {
 					696EA485267D263E00495972 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					696EA48E267D263E00495972 = {
 						CreatedOnToolsVersion = 12.5;
@@ -187,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693F0909267FBD0400EC9FA8 /* HTTPClient.swift in Sources */,
+				693F090C267FBD9100EC9FA8 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +349,7 @@
 		696EA49B267D263E00495972 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -348,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.CatFacts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -355,6 +374,7 @@
 		696EA49C267D263E00495972 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -378,6 +398,7 @@
 		696EA49E267D263E00495972 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CatFactsTests/Info.plist;
@@ -395,6 +416,7 @@
 		696EA49F267D263E00495972 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CatFactsTests/Info.plist;
